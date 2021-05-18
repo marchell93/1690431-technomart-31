@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Марк Петрович](https://up.htmlacademy.ru/htmlcss/31/user/1690431).
-* Наставник: `Неизвестно`.
+- Студент: [Марк Петрович](https://up.htmlacademy.ru/htmlcss/31/user/1690431).
+- Наставник: [Валерий Крукович](https://htmlacademy.ru/profile/id303175).
 
 ---
 
