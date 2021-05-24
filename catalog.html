@@ -15,7 +15,7 @@
         <input id="search-header" type="search" name="search-field">
       </form>
       <a href="#">Закладки: <span>0</span></a>
-      <a href="#">Корзина: <span>0</span></a>
+      <a href="#">Корзина: <span>10</span></a>
       <a href="#">Оформить заказ</a>
 
       <p>
@@ -28,13 +28,12 @@
       <a href="tel:+78005558628">+7 800 555-86-28</a>
       <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
 
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="login-field">Логин</label>
-          <input id="login-field" type="text" name="login" value="Равшан Джамшутович">
-          <button type="button">Разлогиниться</button>
-        </p>
-      </form>
+      <div>
+        <span>Изображение бюста</span>
+        <span>Равшан Джамшутович</span>
+        <a href="#">Разлогиниться</a>
+      </div>
+      
       <a href="#">Мои заказы</a>
       <a href="#">Личный кабинет</a>
 
@@ -86,50 +85,50 @@
       <section>
         <h2>Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset>
-          <legend>Цена:</legend>
-          <label for="range-field">Диапазон цены</label>
-          0 <input id="range-field" type="range" min="0" max="30000"> 30000
-        </fieldset>
-        <fieldset>
-          <legend>Производители:</legend>
-          <ul>
-            <li>
-              <input id="bosch-checkbox" type="checkbox" name="bosch" checked>
-              <label for="bosch-checkbox">Bosch</label>
-            </li>
-            <li>
-              <input id="interskol-checkbox" type="checkbox" name="interskol">
-              <label for="interskol-checkbox">Интерскол</label>
-            </li>
-            <li>
-              <input id="makita-checkbox" type="checkbox" name="makita" checked>
-              <label for="makita-checkbox">Makita</label>
-            </li>
-            <li>
-              <input id="dewalt-checkbox" type="checkbox" name="dewalt">
-              <label for="dewalt-checkbox">Dewalt</label>
-            </li>
-            <li>
-              <input id="hitachi-checkbox" type="checkbox" name="hitachi">
-              <label for="hitachi-checkbox">Hitachi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Питание:</legend>
-          <ul>
-            <li>
-              <input id="acum-radio" type="radio" name="acum" checked>
-              <label for="acum-radio">Аккумуляторные</label>
-            </li>
-            <li>
-              <input id="net-radio" type="radio" name="net">
-              <label for="net-radio">Сетевые</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">Показать</button>
+          <fieldset>
+            <legend>Цена:</legend>
+            <label for="range-field">Диапазон цены</label>
+            0 <input id="range-field" type="range" min="0" max="30000"> 30000
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input id="bosch-checkbox" type="checkbox" name="bosch" checked>
+                <label for="bosch-checkbox">Bosch</label>
+              </li>
+              <li>
+                <input id="interskol-checkbox" type="checkbox" name="interskol">
+                <label for="interskol-checkbox">Интерскол</label>
+              </li>
+              <li>
+                <input id="makita-checkbox" type="checkbox" name="makita" checked>
+                <label for="makita-checkbox">Makita</label>
+              </li>
+              <li>
+                <input id="dewalt-checkbox" type="checkbox" name="dewalt">
+                <label for="dewalt-checkbox">Dewalt</label>
+              </li>
+              <li>
+                <input id="hitachi-checkbox" type="checkbox" name="hitachi">
+                <label for="hitachi-checkbox">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input id="acum-radio" type="radio" name="acum" checked>
+                <label for="acum-radio">Аккумуляторные</label>
+              </li>
+              <li>
+                <input id="net-radio" type="radio" name="net">
+                <label for="net-radio">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
         </form>
       </section>
 
@@ -137,13 +136,19 @@
         <h2>Сортировка:</h2>
         <ul>
           <li>
-            <button type="button">По цене</button>
+            <a href="#">По цене</a>
           </li>
           <li>
-            <button type="button">По типу</button>
+            <a href="#">По типу</a>
           </li>
           <li>
-            <button type="button">По функционалу</button>
+            <a href="#">По функционалу</a>
+          </li>
+          <li>
+            <a href="#">Стрелка вверх</a>
+          </li>
+          <li>
+            <a href="#">Стрелка вниз</a>
           </li>
         </ul>
       </section>
