@@ -1,0 +1,11 @@
+.main-header-logo {
+  display: inline-block;
+  width: 220px;
+  height: 47px;
+  background-color: #EE3643;
+  text-align: center;
+}
+
+.main-logo-text {
+  vertical-align: middle;
+}

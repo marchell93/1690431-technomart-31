@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-toych-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
+  <body class="page-body">
 
-    <header>
-      <a href="index.html">
-        <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип интернет-магазина «Техномарт»">
+    <header class="main-header">
+      <a class="main-header-logo" href="index.html">
+        <img class="main-logo-text" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
       </a>
-      <form action="https://echo.htmlacademy.ru" method="GET">
-        <label for="search-header">Поиск:</label>
-        <input id="search-header" type="search" name="search-field">
+      <form class="main-search" action="https://echo.htmlacademy.ru" method="GET">
+        <label class="main-search-label" for="search-header">Поиск:</label>
+        <input class="main-search-input" id="search-header" type="search" name="search-field">
       </form>
-      <a href="#">Закладки: <span>0</span></a>
-      <a href="#">Корзина: <span>10</span></a>
-      <a href="#">Оформить заказ</a>
+      <a class="bookmarks" href="#">Закладки: <span class="bookmarks-count">0</span></a>
+      <a class="basket" href="#">Корзина: <span class="basket-count">10</span></a>
+      <a class="order-button" href="#">Оформить заказ</a>
 
-      <p>
+      <p class="main-description">
         <em>
           Интернет-магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
         </em>
       </p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
-      <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+      <a class="main-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+      <p class="main-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
 
       <div>
         <span>Изображение бюста</span>
         <span>Равшан Джамшутович</span>
         <a href="#">Разлогиниться</a>
       </div>
-      
+
       <a href="#">Мои заказы</a>
       <a href="#">Личный кабинет</a>
 
@@ -235,7 +238,7 @@
       <section>
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
       </section>
@@ -268,7 +271,7 @@
       <section>
         <h2>Контакты и преимущества</h2>
         <p>
-          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br> 
+          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
           <a href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
         <ul>
@@ -286,11 +289,11 @@
           </li>
         </ul>
       </section>
-        
+
       <section>
         <h2>Копирайт</h2>
         <p>
-          © 2010–2021 Компания «Техномарт»<br> 
+          © 2010–2021 Компания «Техномарт»<br>
           Все права защищены
         </p>
       </section>
@@ -326,6 +329,6 @@
       <button type="button">Продолжить покупки</button>
       <button type="button">Закрыть</button>
     </section>
-    
+
   </body>
 </html>
