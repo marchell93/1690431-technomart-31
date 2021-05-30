@@ -1,11 +1,169 @@
-.main-header-logo {
-  display: inline-block;
+/* Fonts */
+
+@font-face {
+  font-family: "Cuprum";
+  src:
+    url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src:
+    url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src:
+    url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src:
+    url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("../fonts/cuprumbolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-blue: #32425C;
+  --basic-grey: #A9A9A9;
+  --basic-light-grey: #F9F5F0;
+  --basic-background: #F1F5F7;
+  --basic-gold: #FFD180;
+  --basic-dark-blue: #293449;
+
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-purple: #DC91D8;
+  --special-green: #8ED78F;
+  --special-grey: #F3F7F9;
+  --special-dark-blue: #212A3A;
+  --special-red: #BA2732;
+  --special-white: rgba(255, 255, 255, 0.5);
+}
+
+/* page */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+
+.main-header {
+  background-color: var(--basic-background);
+}
+
+.main-header-top {
+  display: flex;
+  background-color: var(--basic-dark-blue);
+}
+
+.main-header-top a,
+.main-header-top label {
+  color: var(--basic-white);
+}
+
+.main-header-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
   height: 47px;
   background-color: #EE3643;
-  text-align: center;
 }
 
-.main-logo-text {
-  vertical-align: middle;
+.main-header-logo-link:hover {
+  cursor: pointer;
+}
+
+.main-header-logo-link:active {
+  background-color: var(--special-red);
+}
+
+.main-desc {
+  color: var(--basic-red);
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.main-phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-red);
+}
+
+.main-address {
+  font-size: 14px;
+  color: var(--basic-blue);
+}
+
+.login-link,
+.register-link {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.main-nav-list {
+  list-style: none;
+  background-color: var(--basic-blue);
+}
+
+.main-nav-item a {
+  color: var(--basic-white);
 }
