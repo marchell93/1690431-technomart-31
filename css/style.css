@@ -87,6 +87,7 @@
 /* page */
 
 body {
+  min-width: 940px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -217,10 +218,12 @@ img {
 }
 
 .main-nav-item a {
+  display: block;
+  height: 100%;
   color: var(--basic-white);
 }
 
-.main-nav-item:active a {
+.main-nav-item a:active {
   opacity: 0.5;
 }
 
@@ -313,14 +316,14 @@ img {
 }
 
 .popular-products-item h3 {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
 }
 
 .popular-products-item p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -367,7 +370,7 @@ img {
 }
 
 .services-desc {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -386,6 +389,8 @@ img {
 }
 
 .services-item a {
+  display: block;
+  height: 100%;
   color: var(--basic-white);
 }
 
@@ -394,7 +399,7 @@ img {
 }
 
 .services-item:active,
-.services-item:active a
+.services-item a:active
 {
   background-color: var(--basic-white);
   color: var(--basic-blue);
@@ -418,7 +423,7 @@ img {
 }
 
 .about-us p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -437,7 +442,7 @@ img {
 }
 
 .contacts p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -515,9 +520,7 @@ img {
 }
 
 .feedback,
-.develop,
-.feedback a,
-.develop a {
+.develop {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
@@ -528,13 +531,13 @@ img {
   color: var(--basic-gold);
 }
 
-.feedback:hover a,
-.develop:hover a {
+.feedback a:hover,
+.develop a:hover {
   text-decoration: underline;
 }
 
-.feedback:active a,
-.develop:active a {
+.feedback a:active,
+.develop a:active {
   color: var(--basic-red);
   text-decoration: none;
 }
@@ -545,7 +548,7 @@ img {
 }
 
 .write-us-field-input::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-grey);
