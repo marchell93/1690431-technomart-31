@@ -773,6 +773,10 @@ img {
 /* catalog */
 /* catalog-header */
 
+.catalog-margin {
+  margin-bottom: 21px;
+}
+
 .logged-user {
   background-color: var(--basic-white);
 }
@@ -798,6 +802,11 @@ img {
   color: var(--special-light-grey);
 }
 
+
+.header-and-breadcrumbs {
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
 /* catalog-container */
 
 .container-header-catalog {
@@ -807,12 +816,20 @@ img {
   color: var(--basic-blue);
   background-color: var(--basic-background);
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding: 29px 0px 30px 29px;
 }
 
 /* breadcrumbs */
 
 .breadcrumbs {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  order: -1;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs li,
@@ -822,6 +839,14 @@ img {
   color: #000000;
 }
 
+/* filter-sorting-perforators */
+
+.filter-sorting-perforators {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 20px;
+}
+
 /* filters */
 
 .filters {
@@ -829,6 +854,7 @@ img {
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
+  grid-column: 1 / 2;
 }
 
 .filters-header {
@@ -836,6 +862,8 @@ img {
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-beige);
+  margin: 0;
+  padding: 10px 18px;
 }
 
 .filter fieldset {
@@ -872,6 +900,7 @@ img {
 /* sorting */
 
 .sorting {
+  display: flex;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -879,6 +908,7 @@ img {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-beige);
+  margin-bottom: 28px;
 }
 
 .sorting-header {
@@ -886,7 +916,11 @@ img {
 }
 
 .sorting ul {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 .sorting a {
@@ -904,7 +938,30 @@ img {
   border: none;
 }
 
+/* sorting-and-perforators */
+
+.sorting-and-perforators {
+  grid-column: 2 / -1;
+}
+
 /* continuation perforators, begin with .popular-products */
+
+.perforators h2 {
+  display: none;
+}
+.perforators-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.perforators-item {
+  width: 220px;
+  height: 318px;
+}
 
 .perforators-item-button-buy {
   font: inherit;
@@ -951,7 +1008,10 @@ img {
 /* pagination */
 
 .pagination-list {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item {
@@ -985,16 +1045,26 @@ img {
 
 /* about-perforators */
 
+.basic-background {
+  background-color: var(--basic-background);
+}
+
 .about-perforators-header {
   font: inherit;
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 64px 0px 25px;
 }
 
 .about-perforators-text {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 68px;
 }
 
 /* product-in-basket */
