@@ -480,7 +480,8 @@ img {
   padding: 0;
 }
 
-.popular-products-item {
+.popular-products-item,
+.perforators-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -504,7 +505,8 @@ img {
   padding: 0;
 }
 
-.popular-products-item-img {
+.popular-products-item-img,
+.perforators-item img {
   order: -1;
 }
 
@@ -936,6 +938,11 @@ img {
   margin-bottom: 21px;
 }
 
+.header-login-user {
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
 .logged-user {
   background-color: var(--basic-white);
 }
@@ -944,6 +951,10 @@ img {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
+}
+
+.account-info {
+  justify-self: center;
 }
 
 .account-info a {
@@ -982,10 +993,15 @@ img {
 /* breadcrumbs */
 
 .breadcrumbs {
+  display: flex;
   list-style: none;
   margin: 0 0 20px;
   padding: 0;
   order: -1;
+}
+
+.breadcrumbs li {
+  margin-right: 40px;
 }
 
 .breadcrumbs li,
@@ -1046,6 +1062,8 @@ img {
 }
 
 .filter-button {
+  width: 220px;
+  height: 38px;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1109,8 +1127,9 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+  row-gap: 20px;
   list-style: none;
-  margin: 0;
+  margin: 0 0 48px 0;
   padding: 0;
 }
 
@@ -1166,7 +1185,7 @@ img {
 .pagination-list {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 0 59px;
   padding: 0;
 }
 
@@ -1176,13 +1195,19 @@ img {
   line-height: 18px;
   font-weight: 400;
   background-color: transparent;
+  margin-right: 10px;
 }
 
 .pagination-item a {
   display: block;
-  height: 100%;
   color: var(--basic-black);
   border: 1px solid var(--special-beige);
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+
+.pagination-item-next a {
+  padding: 10px 31px 10px 32px;
 }
 
 .pagination-current-item {
@@ -1224,17 +1249,38 @@ img {
 
 /* product-in-basket */
 
+.product-in-basket {
+  width: 620px;
+  height: 282px;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+}
+
 .product-in-basket h2 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  align-self: center;
+  justify-self: center;
 }
 
 .modal-catalog-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 620px;
+  height: 112px;
   background-color: var(--basic-modal-grey);
 }
 
+.button-order-modal {
+  padding: 11px 46px 9px 47px;
+  margin-right: 10px;
+}
+
 .button-continue-shop {
+  cursor: pointer;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  padding: 11px 31px 9px 32px;
 }
