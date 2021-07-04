@@ -757,11 +757,13 @@ a[href="index.html"].main-header-logo-link:active {
   border: 1px solid var(--basic-border-grey);
 }
 
-.popular-products-item:hover {
+.popular-products-item:hover,
+.perforators-item:hover {
   box-shadow: 0px 4px 20px var(--special-hover-black);
 }
 
-.popular-products-item:hover img{
+.popular-products-item:hover img,
+.perforators-item:hover img{
   display: none;
 }
 
@@ -774,7 +776,8 @@ a[href="index.html"].main-header-logo-link:active {
   height: 38px;
 }
 
-.popular-products-item:hover .buy-perforator {
+.popular-products-item:hover .buy-perforator,
+.perforators-item:hover .buy-perforator{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1762,36 +1765,59 @@ a[href="index.html"].main-header-logo-link:active {
   text-transform: uppercase;
   background-color: var(--basic-beige);
   margin-bottom: 28px;
-  padding: 0 14px 0 20px;
+  padding: 0;
+  width: 700px;
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
 }
 
 .sorting-header {
   font: inherit;
   margin-right: 140px;
+  padding-left: 20px;
 }
 
-.sorting ul {
+.sorting-list {
   display: flex;
-  justify-content: flex-end;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
   align-items: center;
 }
 
-.sorting a {
+.sorting-item:nth-child(1) {
+  margin-right: 70px;
+}
+
+.sorting-item:nth-child(2) {
+  margin-right: 65px;
+}
+
+.sorting-item:nth-child(3) {
+  margin-right: 46px;
+}
+
+.sorting-item:nth-child(4) {
+  margin-right: 21px;
+}
+
+.sorting a:not(.arrow-icon) {
   color: var(--special-opacity-black);
   border-bottom: 1px dashed var(--basic-red);
 }
 
-.sorting a:hover {
+.sorting a:hover:not(.arrow-icon) {
   color: var(--basic-black);
   border-bottom: 1px solid var(--basic-red);
 }
 
-.sorting a:active{
+.sorting a:active:not(.arrow-icon) {
   color: var(--basic-red);
   border: none;
+}
+
+.sorting a:hover svg path{
+  fill: var(--basic-black);
 }
 
 .sorting a:active svg path{
@@ -1810,15 +1836,14 @@ a[href="index.html"].main-header-logo-link:active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 18px;
   list-style: none;
   margin: 0 0 48px 0;
   padding: 0;
 }
 
 .perforators-item {
-  width: 220px;
-  height: 318px;
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
 }
 
 .perforators-item-button-buy {
@@ -1878,12 +1903,16 @@ a[href="index.html"].main-header-logo-link:active {
   opacity: 50%;
 }
 
+.cart-hidden {
+  visibility: hidden;
+}
+
 /* pagination */
 
 .pagination-list {
   display: flex;
   list-style: none;
-  margin: 0 0 59px;
+  margin: 0 0 55px;
   padding: 0;
 }
 
@@ -1896,22 +1925,28 @@ a[href="index.html"].main-header-logo-link:active {
   margin-right: 10px;
 }
 
-.pagination-item a {
+.pagination-item-link {
   display: block;
   color: var(--basic-black);
   border: 1px solid var(--special-beige);
-  border-radius: 2px;
-  padding: 10px 15px;
+  border-radius: 3px;
+  padding: 9px 14px;
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
 }
 
 .pagination-item-next a {
   padding: 10px 31px 10px 32px;
+  text-transform: uppercase;
 }
 
 .pagination-current-item {
+  display: block;
   border: none;
+  border-radius: 3px;
+  padding: 11px 16px;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
 }
 
 .pagination-item a:hover:not(.pagination-current-item) {
@@ -1942,24 +1977,33 @@ a[href="index.html"].main-header-logo-link:active {
   font-size: 13px;
   line-height: 24px;
   margin: 0;
-  padding: 0 0 68px;
+  padding: 0 0 70px;
 }
 
 /* product-in-basket */
 
 .product-in-basket {
+  display: none;
   width: 620px;
-  height: 282px;
-  display: grid;
+  height: 276px;
+  /* display: grid; */
   grid-template-rows: 1fr min-content;
 }
 
 .product-in-basket h2 {
+  position: relative;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   align-self: center;
   justify-self: center;
+}
+
+.product-in-basket h2::before {
+  content: url("../img/icon-mark.svg");
+  position: absolute;
+  top: -19px;
+  left: -95px;
 }
 
 .modal-catalog-button {
