@@ -84,9 +84,10 @@
   --special-beige: #e5e5e5;
   --special-dark-green: #367315;
   --main-active-nav: #1d2739;
-  --logo-shadow: rgba(0, 0, 0, 0.24);
+  --basic-shadow: rgba(0, 0, 0, 0.25);
   --login-grey: #3d546f;
   --modal-grey: #f4f4f4;
+  --toggle-grey: #ababab;
 }
 
 /* html */
@@ -170,7 +171,7 @@ img {
   width: 220px;
   height: 47px;
   background-color: var(--basic-red);
-  box-shadow: inset 0 -5px 0 0 var(--logo-shadow);
+  box-shadow: inset 0 -5px 0 0 var(--basic-shadow);
 }
 
 .main-header-logo-link img {
@@ -584,7 +585,7 @@ a[href="index.html"].main-header-logo-link:active {
   position: absolute;
   width: 620px;
   height: 104px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--basic-shadow);
   top: 0;
   z-index: -1;
 }
@@ -1154,7 +1155,7 @@ a[href="index.html"].main-header-logo-link:active {
   width: 220px;
   height: 68px;
   background-color: var(--basic-red);
-  box-shadow: inset 0 -5px 0 0 var(--logo-shadow);
+  box-shadow: inset 0 -5px 0 0 var(--basic-shadow);
 }
 
 /* .footer-nav-logo-link:active {
@@ -1407,6 +1408,10 @@ a[href="index.html"].main-header-logo-link:active {
   background-color: var(--basic-red);
 }
 
+.header-contact-info-catalog {
+  margin-right: 51px;
+}
+
 .header-login-user {
   display: grid;
   grid-template-rows: min-content min-content;
@@ -1454,7 +1459,8 @@ a[href="index.html"].main-header-logo-link:active {
 
 .account-info {
   justify-self: center;
-  margin-left: 15px;
+  margin-left: 4px;
+  margin-top: 3px;
 }
 
 .account-info a {
@@ -1471,10 +1477,10 @@ a[href="index.html"].main-header-logo-link:active {
 .account-info a:first-child::after {
   position: absolute;
   content: "";
-  width: 6px;
-  height: 6px;
-  right: -20px;
-  top: 6px;
+  width: 4px;
+  height: 4px;
+  right: -18px;
+  top: 7px;
   background-color: var(--basic-blue);
   border-radius: 50%;
 }
@@ -1502,27 +1508,48 @@ a[href="index.html"].main-header-logo-link:active {
   text-transform: uppercase;
   margin: 0 0 20px;
   padding: 29px 0px 30px 29px;
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
 }
 
 /* breadcrumbs */
 
-.breadcrumbs {
+.breadcrumbs-list {
+  position: relative;
   display: flex;
   list-style: none;
   margin: 0 0 20px;
-  padding: 0;
+  padding: 0 0 0 15px;
   order: -1;
 }
 
-.breadcrumbs li {
-  margin-right: 40px;
+.breadcrumbs-item {
+  margin-right: 15px;
 }
 
-.breadcrumbs li,
-.breadcrumbs a {
+.breadcrumbs-item,
+.breadcrumbs-item-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  content: url("../img/icon-right-small.svg");
+  width: 8px;
+  height: 12px;
+  margin-left: 15px;
+}
+
+.home-icon::before {
+  content: url("../img/icon-home.svg");
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  top: 0;
+  left: 0;
 }
 
 /* filter-sorting-perforators */
@@ -1548,12 +1575,16 @@ a[href="index.html"].main-header-logo-link:active {
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-beige);
-  margin: 0;
+  margin: 0 0 13px 0;
   padding: 10px 18px;
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
+  border-radius: 3px;
 }
 
 .filter fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filter fieldset:not(:last-of-type) {
@@ -1583,6 +1614,140 @@ a[href="index.html"].main-header-logo-link:active {
   text-transform: uppercase;
   background-color: var(--basic-white);
   border: 1px solid var(--special-beige);
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
+  cursor: pointer;
+}
+
+.range-filter {
+  width: 220px;
+  margin-top: 11px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: var(--basic-beige);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
+  margin-bottom: 9px;
+  padding: 39.5px 20px 0 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--special-light-grey);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: var(--basic-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--toggle-grey);
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.price-controls input {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  width: 95px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: var(--basic-beige);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 var(--basic-shadow);
+}
+
+.filter-producer-header {
+  padding-top: 16px;
+  margin-bottom: 15px;
+}
+
+.filter-producer-list {
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.filter-power-list {
+  margin: 0 0 38px 0;
+  padding: 0;
+}
+
+.filter-power-header {
+  padding-bottom: 9px;
+}
+
+.filter-option {
+  margin-bottom: 15px;
+  margin-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--special-light-grey);
+  border-radius: 5px;
+  left: -35px;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: url("../img/checkbox-on.svg");
+  border: none;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 5px solid var(--special-light-grey);
+  border-radius: 50%;
+  left: -35px;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: var(--special-light-grey);
+  border-radius: 50%;
+  left: -27px;
+  top: 5px;
 }
 
 /* sorting */
@@ -1597,14 +1762,17 @@ a[href="index.html"].main-header-logo-link:active {
   text-transform: uppercase;
   background-color: var(--basic-beige);
   margin-bottom: 28px;
+  padding: 0 14px 0 20px;
 }
 
 .sorting-header {
   font: inherit;
+  margin-right: 140px;
 }
 
 .sorting ul {
   display: flex;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1621,9 +1789,13 @@ a[href="index.html"].main-header-logo-link:active {
   border-bottom: 1px solid var(--basic-red);
 }
 
-.sorting a:active {
+.sorting a:active{
   color: var(--basic-red);
   border: none;
+}
+
+.sorting a:active svg path{
+  fill: var(--basic-red);
 }
 
 /* sorting-and-perforators */

@@ -32,41 +32,39 @@
         </div>
       </div>
 
-      <div class="header-middle-bar">
-        <div class="main-header-middle">
-          <p class="main-desc">
-            <em>
-              Интернет-магазин<br/>
-              строительных материалов<br/>
-              и инструментов для ремонта
-            </em>
+      <div class="main-header-middle">
+        <p class="main-desc">
+          <em>
+            Интернет-магазин<br/>
+            строительных материалов<br/>
+            и инструментов для ремонта
+          </em>
+        </p>
+        <div class="header-contact-info header-contact-info-catalog">
+          <a class="main-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <p class="main-address">
+            г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
           </p>
-          <div class="header-contact-info">
-            <a class="main-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-            <p class="main-address">
-              г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-            </p>
-          </div>
+        </div>
 
-          <div class="header-login-user">
-            <div class="logged-user">
-              <a href="#" class="profile-user">
-                <svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/>
-                </svg>
-                Равшан Джамшутович
-              </a>
-              <a href="#" class="logged-user-link">
-                <svg class="logout-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/>
-                  <path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/>
-                </svg>
-              </a>
-            </div>
-            <div class="account-info">
-              <a href="#">Мои заказы</a>
-              <a href="#">Личный кабинет</a>
-            </div>
+        <div class="header-login-user">
+          <div class="logged-user">
+            <a href="#" class="profile-user">
+              <svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/>
+              </svg>
+              Равшан Джамшутович
+            </a>
+            <a href="#" class="logged-user-link">
+              <svg class="logout-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/>
+                <path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/>
+              </svg>
+            </a>
+          </div>
+          <div class="account-info">
+            <a href="#">Мои заказы</a>
+            <a href="#">Личный кабинет</a>
           </div>
         </div>
       </div>
@@ -102,17 +100,17 @@
       <div class="header-and-breadcrumbs container">
         <h1 class="container-header-catalog">Перфораторы</h1>
 
-        <ul class="breadcrumbs">
-          <li>
-            <a href="index.html"></a>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item-link home-icon" href="index.html" aria-label="Главная"></a>
           </li>
-          <li>
-            <a href="catalog.html">Каталог</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item-link" href="catalog.html">Каталог</a>
           </li>
-          <li>
-            <a href="catalog.html">Инструмент</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item-link" href="catalog.html">Инструмент</a>
           </li>
-          <li>Перфораторы</li>
+          <li class="breadcrumbs-item">Перфораторы</li>
         </ul>
       </div>
 
@@ -120,47 +118,59 @@
         <section class="filters">
           <h2 class="filters-header">Фильтр:</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset>
+            <fieldset class="filter-range-price">
               <legend>Цена:</legend>
-              <label for="range-field">Диапазон цены</label>
-              0
-              <input class="filter-option filter-range" id="range-field" type="range" min="0" max="30000"/>
-              30000
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 80%"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 18px"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 160px"></div>
+                </div>
+                <div class="price-controls">
+                  <label for="min-price-id" class="visually-hidden">от</label>
+                  <input type="text" name="min-price" id="min-price-id" value="0">
+                  <span class="dash">&ndash;</span>
+                  <label for="max-price-id" class="visually-hidden">до</label>
+                  <input type="text" name="max-price" id="max-price-id" value="30000">
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
-              <legend>Производители:</legend>
-              <ul>
-                <li>
-                  <input class="filter-option filter-checkbox" id="bosch-checkbox" type="checkbox" name="bosch" checked/>
+            <fieldset class="filter-producer">
+              <legend class="filter-producer-header">Производители:</legend>
+              <ul class="filter-producer-list">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" id="bosch-checkbox" type="checkbox" name="bosch" checked/>
                   <label for="bosch-checkbox">Bosch</label>
                 </li>
-                <li>
-                  <input class="filter-option filter-checkbox" id="interskol-checkbox" type="checkbox" name="interskol"/>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" id="interskol-checkbox" type="checkbox" name="interskol"/>
                   <label for="interskol-checkbox">Интерскол</label>
                 </li>
-                <li>
-                  <input class="filter-option filter-checkbox" id="makita-checkbox" type="checkbox" name="makita" checked/>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" id="makita-checkbox" type="checkbox" name="makita" checked/>
                   <label for="makita-checkbox">Makita</label>
                 </li>
-                <li>
-                  <input class="filter-option filter-checkbox" id="dewalt-checkbox" type="checkbox" name="dewalt"/>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" id="dewalt-checkbox" type="checkbox" name="dewalt"/>
                   <label for="dewalt-checkbox">Dewalt</label>
                 </li>
-                <li>
-                  <input class="filter-option filter-checkbox" id="hitachi-checkbox" type="checkbox" name="hitachi"/>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" id="hitachi-checkbox" type="checkbox" name="hitachi"/>
                   <label for="hitachi-checkbox">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Питание:</legend>
-              <ul>
-                <li>
-                  <input class="filter-option filter-radio" id="acum-radio" type="radio" name="acum" checked/>
+              <legend class="filter-producer-header filter-power-header">Питание:</legend>
+              <ul class="filter-power-list">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-radio" id="acum-radio" type="radio" name="filter-power" value="acum-power" checked/>
                   <label for="acum-radio">Аккумуляторные</label>
                 </li>
-                <li>
-                  <input class="filter-option filter-radio" id="net-radio" type="radio" name="net"/>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-radio" id="net-radio" type="radio" name="filter-power" value="net-power"/>
                   <label for="net-radio">Сетевые</label>
                 </li>
               </ul>
@@ -172,21 +182,29 @@
         <div class="sorting-and-perforators">
           <section class="sorting">
             <h2 class="sorting-header">Сортировка:</h2>
-            <ul>
-              <li>
-                <a href="#">По цене</a>
+            <ul class="sorting-list">
+              <li class="sorting-item">
+                <a href="#" class="sorting-item-link">По цене</a>
               </li>
-              <li>
-                <a href="#">По типу</a>
+              <li class="sorting-item">
+                <a href="#" class="sorting-item-link">По типу</a>
               </li>
-              <li>
-                <a href="#">По функционалу</a>
+              <li class="sorting-item">
+                <a href="#" class="sorting-item-link">По функционалу</a>
               </li>
-              <li>
-                <a href="#">Стрелка вверх</a>
+              <li class="sorting-item">
+                <a href="#" aria-label="Стрелка вверх" class="sorting-item-link">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="#">Стрелка вниз</a>
+              <li class="sorting-item">
+                <a href="#" aria-label="Стрелка вниз" class="sorting-item-link">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.66241 10L0.162415 0H11.1624" fill="#C5C5C5"/>
+                  </svg>
+                </a>
               </li>
             </ul>
           </section>
@@ -301,7 +319,7 @@
             <a class="footer-nav-item-link" href="#">Новости</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-item-link" href="catalog.html">Каталог</a>
+            <a class="footer-nav-item-link">Каталог</a>
           </li>
           <li class="footer-nav-item">
             <a class="footer-nav-item-link" href="#">Доставка</a>
@@ -313,9 +331,7 @@
       </section>
 
       <section class="contacts-and-features container">
-        <h2 class="contacts-and-features-header visually-hidden">
-          Контакты и преимущества
-        </h2>
+        <h2 class="contacts-and-features-header visually-hidden">Контакты и преимущества</h2>
         <p class="contacts-and-features-address">
           г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br/>
           <a class="contacts-and-features-address-link" href="tel:+78005558628">
@@ -352,13 +368,28 @@
             <h2 class="social-header visually-hidden">Давайте дружить!</h2>
             <ul class="social-list">
               <li class="social-item">
-                <a class="social-item-link" href="#">Вконтакте</a>
+                <a href="#" class="social-item-link" aria-label="Вконтакте">
+                  <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.16 1.48c11.5 0 20.8 9.1 20.8 20.34 0 11.23-9.3 20.33-20.8 20.33-11.49 0-20.8-9.1-20.8-20.33 0-11.23 9.31-20.34 20.8-20.34z" fill="#212A3A"/>
+                    <path d="M24.54 25.73c.92-.3 2.1 1.91 3.35 2.75.95.64 1.67.5 1.67.5l3.34-.04s1.75-.1.92-1.46c-.07-.11-.48-1-2.49-2.83-2.1-1.92-1.8-1.6.72-4.92 1.53-2.02 2.15-3.25 1.96-3.78-.19-.5-1.32-.37-1.32-.37l-3.77.03c-.36 0-.67.1-.82.48 0 0-.6 1.56-1.39 2.89-1.67 2.8-2.34 2.95-2.62 2.77-.64-.4-.48-1.63-.48-2.5 0-2.71.42-3.84-.81-4.14-.41-.1-.71-.16-1.76-.17-1.34-.02-2.48 0-3.12.31-.43.21-.76.67-.56.7.25.03.8.14 1.11.54.39.52.37 1.68.37 1.68s.22 3.2-.52 3.6c-.5.27-1.2-.29-2.7-2.83-.76-1.3-1.34-2.74-1.34-2.74s-.1-.27-.3-.41c-.25-.18-.59-.23-.59-.23l-3.57.02s-.54.01-.74.24c-.17.2-.01.63-.01.63s2.8 6.45 5.97 9.7c2.9 2.98 6.21 2.79 6.21 2.79h1.5s.45-.05.68-.3c.22-.22.21-.64.21-.64s-.03-1.98.9-2.27z" fill="#fff"/>
+                  </svg>
+                </a>
               </li>
               <li class="social-item">
-                <a class="social-item-link" href="#">Фейсбук</a>
+                <a class="social-item-link" href="#" aria-label="Фейсбук">
+                  <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9 1.5a20.3 20.3 0 110 40.6 20.3 20.3 0 010-40.6z" fill="#212A3A"/>
+                    <path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4h4z" fill="#fff"/>
+                  </svg>
+                </a>
               </li>
               <li class="social-item">
-                <a class="social-item-link" href="#">Инстаграм</a>
+                <a class="social-item-link" href="#" aria-label="Инстаграм">
+                  <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9 1.48a20.33 20.33 0 110 40.67 20.33 20.33 0 010-40.67z" fill="#212A3A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15a3 3 0 013 3v15a3 3 0 01-3 3H14a3 3 0 01-3-3V14a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM14 29v-9h1.18a6.5 6.5 0 1012.64 0H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"/>
+                  </svg>
+                </a>
               </li>
             </ul>
           </section>
