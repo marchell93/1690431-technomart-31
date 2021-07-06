@@ -591,11 +591,11 @@ a[href="index.html"].main-header-logo-link:active {
 }
 
 .slide-drill {
-  background-image: url("../img/Layer-slader-1.jpg");
+  background-image: url("../img/layer-slader-1.jpg");
 }
 
 .slide-perforator {
-  background-image: url("../img/Layer-slader-2.jpg");
+  background-image: url("../img/layer-slader-2.jpg");
 }
 
 .slider-list {
@@ -936,7 +936,7 @@ a[href="index.html"].main-header-logo-link:active {
 }
 
 .services-list::after {
-  content: url("../img/Object.png");
+  content: url("../img/object.png");
   position: absolute;
   top: -50px;
   left: 226px;
@@ -1340,6 +1340,7 @@ a[href="index.html"].main-header-logo-link:active {
 .write-us-field-label {
   display: inline-block;
   margin-bottom: 11px;
+  vertical-align: top;
 }
 
 .write-us-field-input::placeholder {
