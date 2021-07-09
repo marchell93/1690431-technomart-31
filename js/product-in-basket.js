@@ -13,3 +13,12 @@ buyButtonClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   buyModal.classList.remove("modal-show-grid");
 });
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.key === "Esc" || evt.key === "Escape") {
+    if (buyModal.classList.contains("modal-show-grid")) {
+      evt.preventDefault();
+      buyModal.classList.remove("modal-show-grid");
+    }
+  }
+});
