@@ -1478,8 +1478,6 @@ a[href="index.html"].main-header-logo-link:active {
   align-items: center;
   justify-self: end;
   flex-wrap: wrap;
-  /* width: 299px;
-  height: 45px; */
   padding: 12px 0;
   background-color: var(--basic-white);
 }
@@ -1824,6 +1822,14 @@ a[href="index.html"].main-header-logo-link:active {
 .filter-input-radio:focus + label::before{
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-input-checkbox:disabled + label::before,
+.filter-input-radio:disabled + label::before,
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:disabled + label{
+  opacity: 0.5;
+  cursor: default;
 }
 
 /* sorting */
